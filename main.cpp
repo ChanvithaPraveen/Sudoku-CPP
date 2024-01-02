@@ -122,6 +122,7 @@ struct SudokuSolver {
     }
 };
 
+
 int countRowsInFile(const std::string& filename) {
     std::ifstream file(filename);
 
@@ -147,6 +148,7 @@ std::string generateOutputFileName(const std::string& inputFileName) {
     // Insert "_output" before the dot (extension)
     return inputFileName.substr(0, dotPos) + "_output" + inputFileName.substr(dotPos);
 }
+
 
 int main() {
     std::cout << "Enter the input file name:";
