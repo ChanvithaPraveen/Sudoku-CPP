@@ -151,19 +151,17 @@ std::string generateOutputFileName(const std::string& inputFileName) {
 
 
 int main() {
+    std::cout << "\n================== SUDOKU SOLVER ==================\n\n";
     std::cout << "Enter the input file name:";
     std::string filename;
     std::cin >> filename;
 
     int size = countRowsInFile("D:\\Git Hub Projects\\Sudoku Solver\\1\\Sample Inputs\\" + filename);
-//    std::cout << size << std::endl;
 
     if (size == 9) {
-//        std::cout << "The puzzle is a 9x9 Sudoku." << std::endl;
         SIZE = 9;
         SQRT_SIZE = 3;
     } else if (size == 16) {
-//        std::cout << "The puzzle is a 16x16 Sudoku." << std::endl;
         SIZE = 16;
         SQRT_SIZE = 4;
     } else {
@@ -190,6 +188,7 @@ int main() {
         output_filename = generateOutputFileName(filename);
         solver.saveBoard("D:\\Git Hub Projects\\Sudoku Solver\\1\\Sample Solutions & Outputs\\" + output_filename);
         solver.printBoard();
+        std::cout << "\n====================================================";
     } else {
         std::cout << "No solution exists." << std::endl;
     }
