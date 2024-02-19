@@ -44,6 +44,6 @@
 Contributions to improve the efficiency or add new features to the Sudoku Solver are welcome. Feel free to submit pull requests or open issues for suggestions and bug reports.
 
 ### 9x9 Puzzle
-![Input_not_Colorized_Image]()
+![Input_not_Colorized_Image](ReadmeImages/1.png)
 ### 16x16 Puzzle
-![Input_not_Colorized_Image]()
+![Input_not_Colorized_Image](ReadmeImages/2.png)
